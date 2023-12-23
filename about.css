@@ -1,0 +1,11 @@
+.btn2:hover{
+    background-color: #d63384;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-color: solid 1px rgb(231, 231, 231);
+}
