@@ -6,6 +6,62 @@
     <title>Avs Design</title>
     <link rel="icon" type="image/x-icon" href="Assets/avs-designs-high-resolution-logo-black.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card {
+            width: 100%;
+            border: 1px solid #ddd; /* Smooth stroke */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and hover */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); /* Subtle default shadow */
+        }
+
+        .card:hover {
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+            transform: scale(1.02); /* Slightly increase size on hover */
+        }
+
+        .card-img-left {
+            width: 30%; /* 30% width for the image */
+            border-top-left-radius: 10px; /* Smooth image borders */
+            border-bottom-left-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-body {
+            width: 70%; /* 70% width for the text */
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease; /* Smooth color transition */
+        }
+
+        .card:hover img {
+            filter: grayscale(0%); /* Show color on hover */
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 10px; /* Space between title and description */
+            margin-left: 20px;
+        }
+
+        .card-text {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        .text-start {
+            text-align: left !important; /* Ensure left alignment */
+        }
+    </style>
 </head>
 <body>
     <header class="bg-white w-100" style="position: fixed; z-index: 1;">
@@ -45,28 +101,56 @@
     <section class="p-5">
         <div class="container">
             <div class="row mt-5 pt-5">
-                <div class="col-md-6 d-flex justify-content-center pt-1 mt-2">
+                <!-- Card 1 -->
+                <div class="col-md-12 mb-4">
                     <a href="firstproject.html" style="text-decoration: none; color: black;">
-                        <div class="card p-2 h-100">
-                            <img src="Assets/4 (1).png" class="card-img-top" alt="...">
-                            <div class="card-body pt-1">
-                                <p class="card-text text-center">GoBeyond is a user-centered travel platform revolutionizing the experience with intuitive planning, community building, sustainability, safety, and accessibility at its core, making travel a transformative journey for all.</p>
+                        <div class="card d-flex flex-row h-100 p-0">
+                            <div class="card-img-left">
+                                <img src="Assets/Splash-1.png" class="img-fluid" alt="Project Image">
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-center text-start"> <!-- Added text-start here -->
+                                <h5 class="card-title">Curefinity: Unified Healthcare Platform
+                                </h5> <!-- Added Title Here -->
+                                <p class="card-text">Explore the concept of a unified healthcare system designed to streamline services like consultations, pharmacy management, and AI-powered advice. Dive into the detailed design process, user insights, and key decisions that shaped this idea.                            
+                                </p> <!-- Added Description Here -->
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center pt-1 mt-2">
-                    <a href="secondproject.html" style="text-decoration: none; color: black;">
-                        <div class="card p-2 h-100">
-                            <img src="Assets/Frame 29 (1).png" class="card-img-top" alt="...">
-                            <div class="card-body pt-1">
-                                <p class="card-text text-center">The innovative scheduling app revolutionizes time management for frequent travelers, streamlining international meeting scheduling with smart time zone adjustment and proactive notifications.</p>
-                            </div>
-                        </div>
-                    </a>
+                <!-- Card 2 -->
+        <div class="col-md-12 mb-4">
+            <a href="secondproject.html" style="text-decoration: none; color: black;">
+                <div class="card d-flex flex-row h-100 p-0">
+                    <div class="card-img-left">
+                        <img src="Assets/Splash-2.png" class="img-fluid" alt="Project Image">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center text-start"> <!-- Added text-start here -->
+                        <h5 class="card-title">EDVDO: An AI-Powered Career Guidance Platform
+                        </h5> <!-- Added Title Here -->
+                        <p class="card-text">EDVDO is a advanced tech integrated career guidance platform for helping students in grades 8-12 discover personalized career paths using AI-driven insights, assessments, and expert counseling sessions. Click to explore the full case study.
+                        </p> <!-- Added Description Here -->
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
+        <!-- Card 3 -->
+        <div class="col-md-12 mb-4">
+            <a href="thirdproject.html" style="text-decoration: none; color: black;">
+                <div class="card d-flex flex-row h-100 p-0">
+                    <div class="card-img-left">
+                        <img src="Assets/Splash-3.png" class="img-fluid" alt="Project Image">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center text-start"> <!-- Added text-start here -->
+                        <h5 class="card-title">GO Beyond: A Comprehesive Travel Platform</h5> <!-- Added Title Here -->
+                        <p class="card-text">Discover the design journey behind GO Beyond, a comprehensive platform that simplifies travel planning, booking, and exploration. Click to explore the case study and see how this solution redefines the travel experience.
+                        </p> <!-- Added Description Here -->
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
     </section>
     <!--
     <footer>
